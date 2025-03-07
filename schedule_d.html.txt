@@ -1,0 +1,1177 @@
+Below is the complete HTML web page for your "Schedule D - Agreement Activities" project, covering all 8 sections with their tasks and detailed subtasks. Each section, task, and subtask is clickable to expand, showing descriptions, steps, and estimated times as requested. This is a fully functional, interactive page you can save as `schedule_d.html` and open in a browser. It’s tailored to your St. John’s project, reflecting your solo work, 40 hours/week, and local context.
+
+---
+
+### Complete HTML Code
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule D - Agreement Activities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .section h2 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        .task-list, .subtask-details {
+            display: none;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+        }
+        .task {
+            margin: 10px 0;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        .task h3 {
+            margin: 0;
+            color: #2980b9;
+        }
+        .subtask {
+            margin: 5px 0;
+            padding: 5px;
+            background-color: #f9f9f9;
+            border: 1px solid #eee;
+            cursor: pointer;
+        }
+        .subtask h4 {
+            margin: 0;
+            color: #e67e22;
+        }
+        .details {
+            display: none;
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #fefefe;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+        .details p {
+            margin: 5px 0;
+            color: #555;
+        }
+    </style>
+    <script>
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            element.style.display = element.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</head>
+<body>
+    <h1>Schedule D - Agreement Activities</h1>
+    <p><strong>Project Description:</strong> Help 490 newcomers in Newfoundland and Labrador with volunteering and jobs by December 31, 2025.</p>
+    <p><strong>Start Date:</strong> March 6, 2025 | <strong>End Date:</strong> December 31, 2025 | <strong>Assignee:</strong> You (40 hours/week)</p>
+
+    <!-- Section 1 -->
+    <div class="section" onclick="toggleVisibility('section1-tasks')">
+        <h2>1. Helping People Find Jobs (Economic Integration - Labour Market Access)</h2>
+    </div>
+    <div id="section1-tasks" class="task-list">
+        <div class="task" onclick="toggleVisibility('task1-1-subtasks')">
+            <h3>Task 1.1: Start List for People (Due: March 12, 2025)</h3>
+        </div>
+        <div id="task1-1-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask1-1-1-details')">
+                <h4>Find Newcomer Organizations in St. John’s (4 hours)</h4>
+            </div>
+            <div id="subtask1-1-1-details" class="details">
+                <p><strong>Description:</strong> Identify 3-5 groups to connect with newcomers.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Search online (2h): Google “newcomer services St. John’s” and stjohns.ca.</p>
+                <p>- List ANC, YMCA, Library (1h).</p>
+                <p>- Call ANC (709-722-9680) (1h): “Hi, I’m [Your Name], helping 80 newcomers volunteer. Can I meet someone?”</p>
+                <p><strong>Time:</strong> 4 hours (March 6)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-1-2-details')">
+                <h4>Email and Call Organizations (5 hours)</h4>
+            </div>
+            <div id="subtask1-1-2-details" class="details">
+                <p><strong>Description:</strong> Contact 3 groups to build partnerships.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Write email (1h): Send to ANC (info@ancnl.ca), YMCA, Library.</p>
+                <p>- Call after 2 days (3h): Ask for a chat or event invite.</p>
+                <p>- Schedule 1-2 meetings (1h).</p>
+                <p><strong>Time:</strong> 5 hours (March 7-8)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-1-3-details')">
+                <h4>Create a Survey for Newcomers (1.5 hours)</h4>
+            </div>
+            <div id="subtask1-1-3-details" class="details">
+                <p><strong>Description:</strong> Make a Google Form for newcomer info.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Open Google Forms (1h): Add 5 questions (Name, Skills, etc.).</p>
+                <p>- Save link/QR code (30m).</p>
+                <p><strong>Time:</strong> 1.5 hours (March 9)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-1-4-details')">
+                <h4>Test List with Sample Data (3 hours)</h4>
+            </div>
+            <div id="subtask1-1-4-details" class="details">
+                <p><strong>Description:</strong> Try the list and survey with fake info.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Set up Excel (1h): Add 5 fake entries.</p>
+                <p>- Test survey (1h): Fill it, ask a friend.</p>
+                <p>- Fix issues (1h).</p>
+                <p><strong>Time:</strong> 3 hours (March 10)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-1-5-details')">
+                <h4>Gather First Responses (6 hours)</h4>
+            </div>
+            <div id="subtask1-1-5-details" class="details">
+                <p><strong>Description:</strong> Start list with 5-10 newcomers.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Print 20 surveys (1h).</p>
+                <p>- Attend ANC event (3h): Get 5-10 responses.</p>
+                <p>- Enter data (2h).</p>
+                <p><strong>Time:</strong> 6 hours (March 11-12)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task1-2-subtasks')">
+            <h3>Task 1.2: Write Profiles (Due: August 6, 2025)</h3>
+        </div>
+        <div id="task1-2-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask1-2-1-details')">
+                <h4>Collect 20 Profiles (10 hours)</h4>
+            </div>
+            <div id="subtask1-2-1-details" class="details">
+                <p><strong>Description:</strong> Get first 20 profiles.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Attend 2 ANC events (6h): Collect 10 each.</p>
+                <p>- Enter data (2h).</p>
+                <p>- Write profiles (2h).</p>
+                <p><strong>Time:</strong> 10 hours (April 3-9, Week 5)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-2-2-details')">
+                <h4>Collect 20 More (40 Total) (10 hours)</h4>
+            </div>
+            <div id="subtask1-2-2-details" class="details">
+                <p><strong>Description:</strong> Add 20 more profiles.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email ANC for referrals (1h).</p>
+                <p>- Attend Library event (4h): Get 10.</p>
+                <p>- Visit YMCA (4h): Get 10.</p>
+                <p>- Update Excel/profiles (1h).</p>
+                <p><strong>Time:</strong> 10 hours (May 8-14, Week 10)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-2-3-details')">
+                <h4>Collect 20 More (60 Total) (10 hours)</h4>
+            </div>
+            <div id="subtask1-2-3-details" class="details">
+                <p><strong>Description:</strong> Gather 20 additional profiles.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call 3 orgs (3h): Ask to distribute survey.</p>
+                <p>- Host drop-in (5h): Get 15.</p>
+                <p>- Update Excel/profiles (2h).</p>
+                <p><strong>Time:</strong> 10 hours (June 26-July 2, Week 17)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-2-4-details')">
+                <h4>Finish Last 20 (80 Total) (10 hours)</h4>
+            </div>
+            <div id="subtask1-2-4-details" class="details">
+                <p><strong>Description:</strong> Complete final 20 profiles.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Post on FB (2h): “Newcomers NL.”</p>
+                <p>- Attend event (5h): Get 10.</p>
+                <p>- Follow up emails (2h): Get 10.</p>
+                <p>- Finalize (1h).</p>
+                <p><strong>Time:</strong> 10 hours (July 31-August 6, Week 22)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task1-3-subtasks')">
+            <h3>Task 1.3: Help with Resumes (Due: August 20, 2025)</h3>
+        </div>
+        <div id="task1-3-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask1-3-1-details')">
+                <h4>Help 10 People (10 hours)</h4>
+            </div>
+            <div id="subtask1-3-1-details" class="details">
+                <p><strong>Description:</strong> Meet 10 newcomers for resume help.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email 20 (2h): Schedule meetings.</p>
+                <p>- Hold 5 sessions (5h): Add volunteer section.</p>
+                <p>- Update profiles (3h).</p>
+                <p><strong>Time:</strong> 10 hours (April 17-23, Week 7)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-3-2-details')">
+                <h4>Help 10 More (20 Total) (10 hours)</h4>
+            </div>
+            <div id="subtask1-3-2-details" class="details">
+                <p><strong>Description:</strong> Assist 10 more.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call 15 (3h): Schedule.</p>
+                <p>- Meet 5 (5h).</p>
+                <p>- Update profiles (2h).</p>
+                <p><strong>Time:</strong> 10 hours (June 5-11, Week 14)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-3-3-details')">
+                <h4>Finish Last 20 (40 Total) (12 hours)</h4>
+            </div>
+            <div id="subtask1-3-3-details" class="details">
+                <p><strong>Description:</strong> Complete resume help.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Host workshop (6h): Help 15.</p>
+                <p>- Meet 5 (4h).</p>
+                <p>- Update profiles (2h).</p>
+                <p><strong>Time:</strong> 12 hours (August 14-20, Week 24)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task1-4-subtasks')">
+            <h3>Task 1.4: Create Papers and Slideshows (Due: July 23, 2025)</h3>
+        </div>
+        <div id="task1-4-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask1-4-1-details')">
+                <h4>Write Paper (6 hours)</h4>
+            </div>
+            <div id="subtask1-4-1-details" class="details">
+                <p><strong>Description:</strong> Create one-pager with tips.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Research tips (2h).</p>
+                <p>- Draft in Word (2h).</p>
+                <p>- Print 10, get feedback (2h).</p>
+                <p><strong>Time:</strong> 6 hours (March 13-19, Week 2)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-4-2-details')">
+                <h4>Finish Paper and Start Slideshow (6 hours)</h4>
+            </div>
+            <div id="subtask1-4-2-details" class="details">
+                <p><strong>Description:</strong> Finalize paper, begin slides.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Edit paper (2h).</p>
+                <p>- Start Google Slides (2h): 5 slides.</p>
+                <p>- Add paper content (2h).</p>
+                <p><strong>Time:</strong> 6 hours (March 20-26, Week 3)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask1-4-3-details')">
+                <h4>Finish Slideshow and Links (6 hours)</h4>
+            </div>
+            <div id="subtask1-4-3-details" class="details">
+                <p><strong>Description:</strong> Complete and share slideshow.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Add 5 slides (4h).</p>
+                <p>- Create Drive link (1h).</p>
+                <p>- Share with ANC (1h).</p>
+                <p><strong>Time:</strong> 6 hours (July 17-23, Week 20)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section" onclick="toggleVisibility('section2-tasks')">
+        <h2>2. Finding Volunteer Places (Settlement Support - Place-Based Initiatives)</h2>
+    </div>
+    <div id="section2-tasks" class="task-list">
+        <div class="task" onclick="toggleVisibility('task2-1-subtasks')">
+            <h3>Task 2.1: Start List (Due: March 12, 2025)</h3>
+        </div>
+        <div id="task2-1-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask2-1-1-details')">
+                <h4>Find Volunteer Groups in NL (4 hours)</h4>
+            </div>
+            <div id="subtask2-1-1-details" class="details">
+                <p><strong>Description:</strong> Identify 3-5 groups needing volunteers.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Search volunteerstjohns.ca (2h).</p>
+                <p>- Call Gander Town Hall (1h).</p>
+                <p>- Write 5 contacts (1h).</p>
+                <p><strong>Time:</strong> 4 hours (March 6)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-1-2-details')">
+                <h4>Email and Call Groups (5 hours)</h4>
+            </div>
+            <div id="subtask2-1-2-details" class="details">
+                <p><strong>Description:</strong> Contact 3 groups.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Write email (1h).</p>
+                <p>- Call after 2 days (3h).</p>
+                <p>- Schedule meetings (1h).</p>
+                <p><strong>Time:</strong> 5 hours (March 7-8)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-1-3-details')">
+                <h4>Create a Volunteer Survey (1.5 hours)</h4>
+            </div>
+            <div id="subtask2-1-3-details" class="details">
+                <p><strong>Description:</strong> Make a Google Form.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Open Google Forms (1h).</p>
+                <p>- Save link/QR code (30m).</p>
+                <p><strong>Time:</strong> 1.5 hours (March 9)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-1-4-details')">
+                <h4>Test List with Sample Data (3 hours)</h4>
+            </div>
+            <div id="subtask2-1-4-details" class="details">
+                <p><strong>Description:</strong> Test list and survey.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Set up Excel (1h).</p>
+                <p>- Test survey (1h).</p>
+                <p>- Fix issues (1h).</p>
+                <p><strong>Time:</strong> 3 hours (March 10)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-1-5-details')">
+                <h4>Gather First Responses (6 hours)</h4>
+            </div>
+            <div id="subtask2-1-5-details" class="details">
+                <p><strong>Description:</strong> Start list with 5-10 volunteers.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Print 20 surveys (1h).</p>
+                <p>- Visit CSCNL event (3h).</p>
+                <p>- Enter data (2h).</p>
+                <p><strong>Time:</strong> 6 hours (March 11-12)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task2-2-subtasks')">
+            <h3>Task 2.2: Pick Towns and Match People (Due: October 1, 2025)</h3>
+        </div>
+        <div id="task2-2-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask2-2-1-details')">
+                <h4>Pick Towns (6 hours)</h4>
+            </div>
+            <div id="subtask2-2-1-details" class="details">
+                <p><strong>Description:</strong> Select St. John’s, Gander, Clarenville.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call CSCNL (2h).</p>
+                <p>- Research towns (2h).</p>
+                <p>- Email 3 groups/town (2h).</p>
+                <p><strong>Time:</strong> 6 hours (March 27-April 2, Week 4)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-2-2-details')">
+                <h4>Match 10 People (6 hours)</h4>
+            </div>
+            <div id="subtask2-2-2-details" class="details">
+                <p><strong>Description:</strong> Pair 10 volunteers.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- List 10 jobs (2h).</p>
+                <p>- Email 10 (2h).</p>
+                <p>- Confirm (2h).</p>
+                <p><strong>Time:</strong> 6 hours (July 24-30, Week 21)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-2-3-details')">
+                <h4>Match Last 10 (20 Total) (8 hours)</h4>
+            </div>
+            <div id="subtask2-2-3-details" class="details">
+                <p><strong>Description:</strong> Pair 10 more.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update job list (2h).</p>
+                <p>- Email/call 15 (4h).</p>
+                <p>- Update list (2h).</p>
+                <p><strong>Time:</strong> 8 hours (September 25-October 1, Week 30)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task2-3-subtasks')">
+            <h3>Task 2.3: Write Volunteer Jobs (Due: September 17, 2025)</h3>
+        </div>
+        <div id="task2-3-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask2-3-1-details')">
+                <h4>Write 10 Jobs (10 hours)</h4>
+            </div>
+            <div id="subtask2-3-1-details" class="details">
+                <p><strong>Description:</strong> Draft 10 job ideas.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call 3 groups (3h).</p>
+                <p>- Write 10 jobs (5h).</p>
+                <p>- Email drafts (2h).</p>
+                <p><strong>Time:</strong> 10 hours (April 3-9, Week 5)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-3-2-details')">
+                <h4>Write 10 More (20 Total) (10 hours)</h4>
+            </div>
+            <div id="subtask2-3-2-details" class="details">
+                <p><strong>Description:</strong> Add 10 more.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Meet 2 groups (4h).</p>
+                <p>- Write 10 jobs (4h).</p>
+                <p>- Share (2h).</p>
+                <p><strong>Time:</strong> 10 hours (July 10-16, Week 19)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-3-3-details')">
+                <h4>Finish Last 10 (30 Total) (10 hours)</h4>
+            </div>
+            <div id="subtask2-3-3-details" class="details">
+                <p><strong>Description:</strong> Complete 10 final jobs.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call 3 groups (3h).</p>
+                <p>- Write 10 jobs (5h).</p>
+                <p>- Finalize (2h).</p>
+                <p><strong>Time:</strong> 10 hours (September 11-17, Week 28)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task2-4-subtasks')">
+            <h3>Task 2.4: Hold Workshops (Due: October 22, 2025)</h3>
+        </div>
+        <div id="task2-4-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask2-4-1-details')">
+                <h4>Prepare 1st Workshop (7 hours)</h4>
+            </div>
+            <div id="subtask2-4-1-details" class="details">
+                <p><strong>Description:</strong> Plan workshop.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Draft agenda (2h).</p>
+                <p>- Make slides (3h).</p>
+                <p>- Email 15 groups (2h).</p>
+                <p><strong>Time:</strong> 7 hours (April 24-30, Week 8)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-4-2-details')">
+                <h4>Hold 1st Workshop (5 hours)</h4>
+            </div>
+            <div id="subtask2-4-2-details" class="details">
+                <p><strong>Description:</strong> Run online.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Book room (1h).</p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Collect feedback (1h).</p>
+                <p><strong>Time:</strong> 5 hours (May 1-7, Week 9)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-4-3-details')">
+                <h4>Hold 2nd Workshop (7 hours)</h4>
+            </div>
+            <div id="subtask2-4-3-details" class="details">
+                <p><strong>Description:</strong> Run in-person.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update slides (2h).</p>
+                <p>- Host (4h).</p>
+                <p>- Log attendees (1h).</p>
+                <p><strong>Time:</strong> 7 hours (June 19-25, Week 16)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-4-4-details')">
+                <h4>Hold 3rd Workshop (6 hours)</h4>
+            </div>
+            <div id="subtask2-4-4-details" class="details">
+                <p><strong>Description:</strong> Run online.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email invites (2h).</p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Update list (1h).</p>
+                <p><strong>Time:</strong> 6 hours (August 7-13, Week 23)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-4-5-details')">
+                <h4>Hold 4th Workshop (7 hours)</h4>
+            </div>
+            <div id="subtask2-4-5-details" class="details">
+                <p><strong>Description:</strong> Run in Gander.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call Gander group (2h).</p>
+                <p>- Host (4h).</p>
+                <p>- Finalize feedback (1h).</p>
+                <p><strong>Time:</strong> 7 hours (October 16-22, Week 33)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task2-5-subtasks')">
+            <h3>Task 2.5: Teach Kindness (Due: September 3, 2025)</h3>
+        </div>
+        <div id="task2-5-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask2-5-1-details')">
+                <h4>Plan 1st Training (7 hours)</h4>
+            </div>
+            <div id="subtask2-5-1-details" class="details">
+                <p><strong>Description:</strong> Prepare training.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call ANC (2h).</p>
+                <p>- Draft slides (3h).</p>
+                <p>- Email 10 groups (2h).</p>
+                <p><strong>Time:</strong> 7 hours (May 22-28, Week 12)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-5-2-details')">
+                <h4>Hold 1st Training (5 hours)</h4>
+            </div>
+            <div id="subtask2-5-2-details" class="details">
+                <p><strong>Description:</strong> Run online.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Collect feedback (2h).</p>
+                <p><strong>Time:</strong> 5 hours (May 29-June 4, Week 13)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask2-5-3-details')">
+                <h4>Hold 2nd Training (8 hours)</h4>
+            </div>
+            <div id="subtask2-5-3-details" class="details">
+                <p><strong>Description:</strong> Run in-person.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update slides (2h).</p>
+                <p>- Host (4h).</p>
+                <p>- Log attendees (2h).</p>
+                <p><strong>Time:</strong> 8 hours (August 28-September 3, Week 26)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 3 -->
+    <div class="section" onclick="toggleVisibility('section3-tasks')">
+        <h2>3. Telling Towns About New People (Settlement Support - Improve/Expand)</h2>
+    </div>
+    <div id="section3-tasks" class="task-list">
+        <div class="task" onclick="toggleVisibility('task3-1-subtasks')">
+            <h3>Task 3.1: Write Paper and Tools (Due: August 6, 2025)</h3>
+        </div>
+        <div id="task3-1-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask3-1-1-details')">
+                <h4>Write Paper (6 hours)</h4>
+            </div>
+            <div id="subtask3-1-1-details" class="details">
+                <p><strong>Description:</strong> Draft one-pager.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Research online (2h).</p>
+                <p>- Draft in Word (2h).</p>
+                <p>- Print 5, get feedback (2h).</p>
+                <p><strong>Time:</strong> 6 hours (April 10-16, Week 6)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask3-1-2-details')">
+                <h4>Finish Tools (12 hours)</h4>
+            </div>
+            <div id="subtask3-1-2-details" class="details">
+                <p><strong>Description:</strong> Create GBA+ tools.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call ANC (2h).</p>
+                <p>- Draft tools (4h).</p>
+                <p>- Test with 2 groups (3h).</p>
+                <p>- Finalize, print 20 (3h).</p>
+                <p><strong>Time:</strong> 12 hours (July 31-August 6, Week 22)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task3-2-subtasks')">
+            <h3>Task 3.2: Make Profiles (Due: November 12, 2025)</h3>
+        </div>
+        <div id="task3-2-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask3-2-1-details')">
+                <h4>Write 5 Profiles (10 hours)</h4>
+            </div>
+            <div id="subtask3-2-1-details" class="details">
+                <p><strong>Description:</strong> Create first 5.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email 10 (2h).</p>
+                <p>- Meet 5 (5h).</p>
+                <p>- Write profiles (3h).</p>
+                <p><strong>Time:</strong> 10 hours (June 12-18, Week 15)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask3-2-2-details')">
+                <h4>Write 10 More (15 Total) (11 hours)</h4>
+            </div>
+            <div id="subtask3-2-2-details" class="details">
+                <p><strong>Description:</strong> Add 10 more.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call 15 (3h).</p>
+                <p>- Meet 10 (5h).</p>
+                <p>- Write profiles (3h).</p>
+                <p><strong>Time:</strong> 11 hours (September 18-24, Week 29)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask3-2-3-details')">
+                <h4>Finish Last 5 (20 Total) (7 hours)</h4>
+            </div>
+            <div id="subtask3-2-3-details" class="details">
+                <p><strong>Description:</strong> Complete 5.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Post on FB (2h).</p>
+                <p>- Interview 5 (3h).</p>
+                <p>- Write profiles (2h).</p>
+                <p><strong>Time:</strong> 7 hours (November 6-12, Week 36)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task3-3-subtasks')">
+            <h3>Task 3.3: Give Talks (Due: October 8, 2025)</h3>
+        </div>
+        <div id="task3-3-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask3-3-1-details')">
+                <h4>Prepare 1st Talk (8 hours)</h4>
+            </div>
+            <div id="subtask3-3-1-details" class="details">
+                <p><strong>Description:</strong> Plan talk.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call MNL (2h).</p>
+                <p>- Draft slides (4h).</p>
+                <p>- Practice (2h).</p>
+                <p><strong>Time:</strong> 8 hours (May 15-21, Week 11)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask3-3-2-details')">
+                <h4>Give 1st Talk (MNL) (6 hours)</h4>
+            </div>
+            <div id="subtask3-3-2-details" class="details">
+                <p><strong>Description:</strong> Present online.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email invite (1h).</p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Collect feedback (2h).</p>
+                <p><strong>Time:</strong> 6 hours (July 3-9, Week 18)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask3-3-3-details')">
+                <h4>Give 2nd Talk (MNL) (8 hours)</h4>
+            </div>
+            <div id="subtask3-3-3-details" class="details">
+                <p><strong>Description:</strong> Present in-person.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update slides (2h).</p>
+                <p>- Travel (4h).</p>
+                <p>- Present (2h).</p>
+                <p><strong>Time:</strong> 8 hours (August 21-27, Week 25)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask3-3-4-details')">
+                <h4>Give 3rd Talk (Recreation NL) (6 hours)</h4>
+            </div>
+            <div id="subtask3-3-4-details" class="details">
+                <p><strong>Description:</strong> Present at conference.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call Recreation NL (2h).</p>
+                <p>- Present (3h).</p>
+                <p>- Follow up (1h).</p>
+                <p><strong>Time:</strong> 6 hours (October 2-8, Week 31)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task3-4-subtasks')">
+            <h3>Task 3.4: Send Stuff to Towns (Due: September 10, 2025)</h3>
+        </div>
+        <div id="task3-4-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask3-4-1-details')">
+                <h4>Prepare Distribution (6 hours)</h4>
+            </div>
+            <div id="subtask3-4-1-details" class="details">
+                <p><strong>Description:</strong> Get tools ready.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call MNL (2h).</p>
+                <p>- Email tools PDF (2h).</p>
+                <p>- Print 50 (2h).</p>
+                <p><strong>Time:</strong> 6 hours (September 4-9)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask3-4-2-details')">
+                <h4>Send to Towns (2 hours)</h4>
+            </div>
+            <div id="subtask3-4-2-details" class="details">
+                <p><strong>Description:</strong> Distribute via MNL.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Confirm with MNL (1h).</p>
+                <p>- Track newsletter (1h).</p>
+                <p><strong>Time:</strong> 2 hours (September 10)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4 -->
+    <div class="section" onclick="toggleVisibility('section4-tasks')">
+        <h2>4. Teaching Groups to Welcome People (Settlement Support - Capacity-Building SPOs)</h2>
+    </div>
+    <div id="section4-tasks" class="task-list">
+        <div class="task" onclick="toggleVisibility('task4-1-subtasks')">
+            <h3>Task 4.1: Write Papers and Links (Due: June 25, 2025)</h3>
+        </div>
+        <div id="task4-1-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask4-1-1-details')">
+                <h4>Write Paper (6 hours)</h4>
+            </div>
+            <div id="subtask4-1-1-details" class="details">
+                <p><strong>Description:</strong> Draft one-pager.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Research (2h).</p>
+                <p>- Write (2h).</p>
+                <p>- Get feedback (2h).</p>
+                <p><strong>Time:</strong> 6 hours (March 13-19, Week 2)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-1-2-details')">
+                <h4>Make Links (6 hours)</h4>
+            </div>
+            <div id="subtask4-1-2-details" class="details">
+                <p><strong>Description:</strong> Create resource page.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Edit paper (1h).</p>
+                <p>- Set up Google Sites (3h).</p>
+                <p>- Share with CSCNL (2h).</p>
+                <p><strong>Time:</strong> 6 hours (June 19-25, Week 16)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task4-2-subtasks')">
+            <h3>Task 4.2: Plan Workshops (Due: April 23, 2025)</h3>
+        </div>
+        <div id="task4-2-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask4-2-1-details')">
+                <h4>Draft Agenda and Slides (8 hours)</h4>
+            </div>
+            <div id="subtask4-2-1-details" class="details">
+                <p><strong>Description:</strong> Plan session.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Write agenda (2h).</p>
+                <p>- Make 10 slides (4h).</p>
+                <p>- Test (2h).</p>
+                <p><strong>Time:</strong> 8 hours (April 17-22)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-2-2-details')">
+                <h4>Confirm Logistics (2 hours)</h4>
+            </div>
+            <div id="subtask4-2-2-details" class="details">
+                <p><strong>Description:</strong> Set up workshop.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email 20 groups (1h).</p>
+                <p>- Book room (1h).</p>
+                <p><strong>Time:</strong> 2 hours (April 23)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task4-3-subtasks')">
+            <h3>Task 4.3: Hold Workshops (Due: November 19, 2025)</h3>
+        </div>
+        <div id="task4-3-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask4-3-1-details')">
+                <h4>Hold 1st Workshop (5 hours)</h4>
+            </div>
+            <div id="subtask4-3-1-details" class="details">
+                <p><strong>Description:</strong> Run online.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Log attendees (2h).</p>
+                <p><strong>Time:</strong> 5 hours (May 29-June 4, Week 13)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-3-2-details')">
+                <h4>Hold 2nd Workshop (6 hours)</h4>
+            </div>
+            <div id="subtask4-3-2-details" class="details">
+                <p><strong>Description:</strong> Run in-person.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update slides (2h).</p>
+                <p>- Host (3h).</p>
+                <p>- Log attendees (1h).</p>
+                <p><strong>Time:</strong> 6 hours (July 10-16, Week 19)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-3-3-details')">
+                <h4>Hold 3rd Workshop (6 hours)</h4>
+            </div>
+            <div id="subtask4-3-3-details" class="details">
+                <p><strong>Description:</strong> Run online.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email invites (2h).</p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Log attendees (1h).</p>
+                <p><strong>Time:</strong> 6 hours (August 28-September 3, Week 26)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-3-4-details')">
+                <h4>Hold 4th Workshop (6 hours)</h4>
+            </div>
+            <div id="subtask4-3-4-details" class="details">
+                <p><strong>Description:</strong> Run in-person.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update slides (2h).</p>
+                <p>- Host (3h).</p>
+                <p>- Log attendees (1h).</p>
+                <p><strong>Time:</strong> 6 hours (September 25-October 1, Week 30)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-3-5-details')">
+                <h4>Hold 5th Workshop (Optional) (4 hours)</h4>
+            </div>
+            <div id="subtask4-3-5-details" class="details">
+                <p><strong>Description:</strong> Run online.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Log attendees (1h).</p>
+                <p><strong>Time:</strong> 4 hours (October 23-29, Week 34)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-3-6-details')">
+                <h4>Hold 6th Workshop (Optional) (4 hours)</h4>
+            </div>
+            <div id="subtask4-3-6-details" class="details">
+                <p><strong>Description:</strong> Run in-person.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Host (3h).</p>
+                <p>- Log attendees (1h).</p>
+                <p><strong>Time:</strong> 4 hours (November 13-19, Week 37)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task4-4-subtasks')">
+            <h3>Task 4.4: Send Stuff to Groups (Due: November 26, 2025)</h3>
+        </div>
+        <div id="task4-4-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask4-4-1-details')">
+                <h4>Send to 1000 Groups (5 hours)</h4>
+            </div>
+            <div id="subtask4-4-1-details" class="details">
+                <p><strong>Description:</strong> First batch.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call CSCNL (2h).</p>
+                <p>- Email link (3h).</p>
+                <p><strong>Time:</strong> 5 hours (August 7-13, Week 23)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-4-2-details')">
+                <h4>Send to 1500 More (2500 Total) (5 hours)</h4>
+            </div>
+            <div id="subtask4-4-2-details" class="details">
+                <p><strong>Description:</strong> Second batch.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update list (2h).</p>
+                <p>- Email link (3h).</p>
+                <p><strong>Time:</strong> 5 hours (October 9-15, Week 32)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask4-4-3-details')">
+                <h4>Send to Last 1500 (4000 Total) (5 hours)</h4>
+            </div>
+            <div id="subtask4-4-3-details" class="details">
+                <p><strong>Description:</strong> Final batch.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Confirm list (2h).</p>
+                <p>- Email link (3h).</p>
+                <p><strong>Time:</strong> 5 hours (November 20-26, Week 38)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5 -->
+    <div class="section" onclick="toggleVisibility('section5-tasks')">
+        <h2>5. Showing Jobs at Non-Profits (Economic Integration - Capacity-Building Employers)</h2>
+    </div>
+    <div id="section5-tasks" class="task-list">
+        <div class="task" onclick="toggleVisibility('task5-1-subtasks')">
+            <h3>Task 5.1: Write Job Page (Due: November 5, 2025)</h3>
+        </div>
+        <div id="task5-1-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask5-1-1-details')">
+                <h4>Start Page (6 hours)</h4>
+            </div>
+            <div id="subtask5-1-1-details" class="details">
+                <p><strong>Description:</strong> Draft info page.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Research jobs (3h).</p>
+                <p>- Write in Word (3h).</p>
+                <p><strong>Time:</strong> 6 hours (March 20-26, Week 3)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask5-1-2-details')">
+                <h4>Finish and Share (7 hours)</h4>
+            </div>
+            <div id="subtask5-1-2-details" class="details">
+                <p><strong>Description:</strong> Finalize and distribute.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Edit page (2h).</p>
+                <p>- Print 50 (2h).</p>
+                <p>- Email to 100 (3h).</p>
+                <p><strong>Time:</strong> 7 hours (October 30-November 5, Week 35)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task5-2-subtasks')">
+            <h3>Task 5.2: Make Tips (Due: May 14, 2025)</h3>
+        </div>
+        <div id="task5-2-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask5-2-1-details')">
+                <h4>Draft Tips (6 hours)</h4>
+            </div>
+            <div id="subtask5-2-1-details" class="details">
+                <p><strong>Description:</strong> Create guide.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Research (3h).</p>
+                <p>- Write 1 page (3h).</p>
+                <p><strong>Time:</strong> 6 hours (May 8-13)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask5-2-2-details')">
+                <h4>Share Tips (4 hours)</h4>
+            </div>
+            <div id="subtask5-2-2-details" class="details">
+                <p><strong>Description:</strong> Send to 5 non-profits.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email CSCNL, ANC (2h).</p>
+                <p>- Print 10 (2h).</p>
+                <p><strong>Time:</strong> 4 hours (May 14)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 6 -->
+    <div class="section" onclick="toggleVisibility('section6-tasks')">
+        <h2>6. Making a Volunteer Plan (Settlement Support - Capacity-Building SPOs)</h2>
+    </div>
+    <div id="section6-tasks" class="task-list">
+        <div class="task" onclick="toggleVisibility('task6-1-subtasks')">
+            <h3>Task 6.1: Plan Talks (Due: November 12, 2025)</h3>
+        </div>
+        <div id="task6-1-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask6-1-1-details')">
+                <h4>Plan Talks (7 hours)</h4>
+            </div>
+            <div id="subtask6-1-1-details" class="details">
+                <p><strong>Description:</strong> Set up 4 sessions.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call CSCNL (2h).</p>
+                <p>- Email 40 groups (3h).</p>
+                <p>- Schedule 4 dates (2h).</p>
+                <p><strong>Time:</strong> 7 hours (March 27-April 2, Week 4)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-1-2-details')">
+                <h4>Hold 1st Talk (7 hours)</h4>
+            </div>
+            <div id="subtask6-1-2-details" class="details">
+                <p><strong>Description:</strong> Consult 10 orgs.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Make slides (2h).</p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Take notes (2h).</p>
+                <p><strong>Time:</strong> 7 hours (May 15-21, Week 11)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-1-3-details')">
+                <h4>Hold 2nd Talk (7 hours)</h4>
+            </div>
+            <div id="subtask6-1-3-details" class="details">
+                <p><strong>Description:</strong> Consult 10 orgs.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Update slides (2h).</p>
+                <p>- Host (3h).</p>
+                <p>- Notes (2h).</p>
+                <p><strong>Time:</strong> 7 hours (July 17-23, Week 20)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-1-4-details')">
+                <h4>Hold 3rd Talk (5 hours)</h4>
+            </div>
+            <div id="subtask6-1-4-details" class="details">
+                <p><strong>Description:</strong> Consult 10 orgs.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Host Zoom (3h).</p>
+                <p>- Notes (2h).</p>
+                <p><strong>Time:</strong> 5 hours (September 11-17, Week 28)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-1-5-details')">
+                <h4>Hold 4th Talk (4 hours)</h4>
+            </div>
+            <div id="subtask6-1-5-details" class="details">
+                <p><strong>Description:</strong> Optional.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Host (3h).</p>
+                <p>- Notes (1h).</p>
+                <p><strong>Time:</strong> 4 hours (November 6-12, Week 36)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task6-2-subtasks')">
+            <h3>Task 6.2: Make and Send Surveys (Due: August 20, 2025)</h3>
+        </div>
+        <div id="task6-2-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask6-2-1-details')">
+                <h4>Make Surveys (6 hours)</h4>
+            </div>
+            <div id="subtask6-2-1-details" class="details">
+                <p><strong>Description:</strong> Design 3 surveys.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Newcomers (2h).</p>
+                <p>- Orgs (2h).</p>
+                <p>- Non-profits (2h).</p>
+                <p><strong>Time:</strong> 6 hours (April 24-30, Week 8)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-2-2-details')">
+                <h4>Send Surveys (6 hours)</h4>
+            </div>
+            <div id="subtask6-2-2-details" class="details">
+                <p><strong>Description:</strong> Distribute to 130.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email 50 (2h).</p>
+                <p>- Email 30 (2h).</p>
+                <p>- Post on FB (2h).</p>
+                <p><strong>Time:</strong> 6 hours (June 5-11, Week 14)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-2-3-details')">
+                <h4>Check Answers (9 hours)</h4>
+            </div>
+            <div id="subtask6-2-3-details" class="details">
+                <p><strong>Description:</strong> Analyze responses.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Export to Excel (3h).</p>
+                <p>- Summarize (6h).</p>
+                <p><strong>Time:</strong> 9 hours (August 14-20, Week 24)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task6-3-subtasks')">
+            <h3>Task 6.3: Talk to Important People (Due: October 8, 2025)</h3>
+        </div>
+        <div id="task6-3-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask6-3-1-details')">
+                <h4>Talk to 5 People (9 hours)</h4>
+            </div>
+            <div id="subtask6-3-1-details" class="details">
+                <p><strong>Description:</strong> Interview 5.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call ANC, CSCNL (2h).</p>
+                <p>- Meet 5 (5h).</p>
+                <p>- Notes (2h).</p>
+                <p><strong>Time:</strong> 9 hours (June 26-July 2, Week 17)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-3-2-details')">
+                <h4>Talk to 5 More (10 Total) (9 hours)</h4>
+            </div>
+            <div id="subtask6-3-2-details" class="details">
+                <p><strong>Description:</strong> Interview 5 more.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email 10 (2h).</p>
+                <p>- Meet 5 (5h).</p>
+                <p>- Notes (2h).</p>
+                <p><strong>Time:</strong> 9 hours (October 2-8, Week 31)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task6-4-subtasks')">
+            <h3>Task 6.4: Write Plan (Due: November 26, 2025)</h3>
+        </div>
+        <div id="task6-4-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask6-4-1-details')">
+                <h4>Start Plan (Half Done) (10 hours)</h4>
+            </div>
+            <div id="subtask6-4-1-details" class="details">
+                <p><strong>Description:</strong> Draft first half.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Review Task 6.2, 6.3 (4h).</p>
+                <p>- Write 5 pages (6h).</p>
+                <p><strong>Time:</strong> 10 hours (October 16-22, Week 33)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask6-4-2-details')">
+                <h4>Finish Plan (10 hours)</h4>
+            </div>
+            <div id="subtask6-4-2-details" class="details">
+                <p><strong>Description:</strong> Complete strategy.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Add 5 pages (6h).</p>
+                <p>- Email CSCNL (2h).</p>
+                <p>- Finalize (2h).</p>
+                <p><strong>Time:</strong> 10 hours (November 20-26, Week 38)</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 7 -->
+    <div class="section" onclick="toggleVisibility('section7-tasks')">
+        <h2>7. Telling Everyone About Volunteering (Settlement Support - Improve/Expand)</h2>
+    </div>
+    <div id="section7-tasks" class="task-list">
+        <div class="task" onclick="toggleVisibility('task7-1-subtasks')">
+            <h3>Task 7.1: Write Online Posts (Due: October 29, 2025)</h3>
+        </div>
+        <div id="task7-1-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask7-1-1-details')">
+                <h4>Write 6 Posts (6 hours)</h4>
+            </div>
+            <div id="subtask7-1-1-details" class="details">
+                <p><strong>Description:</strong> First batch.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Draft 6 (3h).</p>
+                <p>- Post on FB (3h).</p>
+                <p><strong>Time:</strong> 6 hours (April 10-16, Week 6)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask7-1-2-details')">
+                <h4>Write 6 More (12 Total) (6 hours)</h4>
+            </div>
+            <div id="subtask7-1-2-details" class="details">
+                <p><strong>Description:</strong> Second batch.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Draft 6 (3h).</p>
+                <p>- Post (3h).</p>
+                <p><strong>Time:</strong> 6 hours (July 3-9, Week 18)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask7-1-3-details')">
+                <h4>Write 6 More (18 Total) (6 hours)</h4>
+            </div>
+            <div id="subtask7-1-3-details" class="details">
+                <p><strong>Description:</strong> Third batch.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Draft 6 (3h).</p>
+                <p>- Post (3h).</p>
+                <p><strong>Time:</strong> 6 hours (September 4-10, Week 27)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask7-1-4-details')">
+                <h4>Write Last 6 (24 Total) (6 hours)</h4>
+            </div>
+            <div id="subtask7-1-4-details" class="details">
+                <p><strong>Description:</strong> Final batch.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Draft 6 (3h).</p>
+                <p>- Post (3h).</p>
+                <p><strong>Time:</strong> 6 hours (October 23-29, Week 34)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task7-2-subtasks')">
+            <h3>Task 7.2: Make Posters and Cards (Due: December 3, 2025)</h3>
+        </div>
+        <div id="task7-2-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask7-2-1-details')">
+                <h4>Make Posters (6 hours)</h4>
+            </div>
+            <div id="subtask7-2-1-details" class="details">
+                <p><strong>Description:</strong> Design posters.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Draft in Canva (4h).</p>
+                <p>- Print 10, get feedback (2h).</p>
+                <p><strong>Time:</strong> 6 hours (May 22-28, Week 12)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask7-2-2-details')">
+                <h4>Print 1000 (6 hours)</h4>
+            </div>
+            <div id="subtask7-2-2-details" class="details">
+                <p><strong>Description:</strong> Produce copies.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Finalize design (2h).</p>
+                <p>- Print 1000 (4h).</p>
+                <p><strong>Time:</strong> 6 hours (August 21-27, Week 25)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask7-2-3-details')">
+                <h4>Send to Workplaces/Schools (8 hours)</h4>
+            </div>
+            <div id="subtask7-2-3-details" class="details">
+                <p><strong>Description:</strong> Distribute.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Call 5 schools, 5 workplaces (3h).</p>
+                <p>- Deliver (5h).</p>
+                <p><strong>Time:</strong> 8 hours (November 27-December 3, Week 39)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task7-3-subtasks')">
+            <h3>Task 7.3: Write Guide (Due: September 24, 2025)</h3>
+        </div>
+        <div id="task7-3-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask7-3-1-details')">
+                <h4>Start Guide (English) (10 hours)</h4>
+            </div>
+            <div id="subtask7-3-1-details" class="details">
+                <p><strong>Description:</strong> Draft English version.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Research tips (3h).</p>
+                <p>- Write 10 pages (5h).</p>
+                <p>- Print 5, get feedback (2h).</p>
+                <p><strong>Time:</strong> 10 hours (June 12-18, Week 15)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask7-3-2-details')">
+                <h4>Translate to 2nd Language (6 hours)</h4>
+            </div>
+            <div id="subtask7-3-2-details" class="details">
+                <p><strong>Description:</strong> Translate (e.g., French).</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Hire translator (3h).</p>
+                <p>- Review (3h).</p>
+                <p><strong>Time:</strong> 6 hours (July 24-30, Week 21)</p>
+            </div>
+            <div class="subtask" onclick="toggleVisibility('subtask7-3-3-details')">
+                <h4>Translate to 3rd Language (6 hours)</h4>
+            </div>
+            <div id="subtask7-3-3-details" class="details">
+                <p><strong>Description:</strong> Translate (e.g., Arabic).</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Hire translator (3h).</p>
+                <p>- Review (3h).</p>
+                <p><strong>Time:</strong> 6 hours (September 18-24, Week 29)</p>
+            </div>
+        </div>
+        <div class="task" onclick="toggleVisibility('task7-4-subtasks')">
+            <h3>Task 7.4: Share Guide (Due: November 19, 2025)</h3>
+        </div>
+        <div id="task7-4-subtasks" class="subtask-details">
+            <div class="subtask" onclick="toggleVisibility('subtask7-4-1-details')">
+                <h4>Send to 100+ Providers (5 hours)</h4>
+            </div>
+            <div id="subtask7-4-1-details" class="details">
+                <p><strong>Description:</strong> Share with providers.</p>
+                <p><strong>Steps:</strong></p>
+                <p>- Email ANC, CSCNL (2h).</p>
+                <p
